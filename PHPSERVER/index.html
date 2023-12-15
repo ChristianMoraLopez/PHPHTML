@@ -1,0 +1,33 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor GET Y POST</title>
+</head>
+<body>
+    <script>
+        const formData = new FormData();
+        // Aqui se agregan los datos que se quieren enviar
+        // Los datos que agregaremos al SERVIDOR con el metodo POST, este metodo no deja ver los datos en la URL
+        formData.append('nombre', 'Juan');
+        formData.append('apellido', 'Perez');
+        formData.append('edad', '25');
+        formData.append('pais', 'Mexico');
+
+        fetch("server.php?color=naranja", {
+            body: formData,
+            method: "POST"
+        })
+        .then(res => res.text())
+        .then(data => {
+            console.log(data);
+        });
+
+
+    </script>
+</body>
+</html>
