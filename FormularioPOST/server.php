@@ -1,7 +1,8 @@
 <?php
 
-$nombre = $_GET['nombre'];
-$apellido = $_GET['apellido'];
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+
 
 
 //vamos a validar si el nombre y el apellido estan vacios
