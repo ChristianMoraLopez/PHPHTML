@@ -14,8 +14,8 @@ function sendMail($subject, $body, $email, $name, $html = false) {
         $phpmailer->Host = 'smtp-mail.outlook.com'; // Cambia esto por el host de Hotmail
         $phpmailer->SMTPAuth = true;
         $phpmailer->Port = 587; // Puerto típico para Hotmail
-        $phpmailer->Username = 'christianmoralopez@hotmail.com';
-        $phpmailer->Password = '4682Oscuridad!'; // Reemplaza esto con tu contraseña real
+        $phpmailer->Username = 'instertatucorreo';
+        $phpmailer->Password = 'insertacontraseña'; // Reemplaza esto con tu contraseña real
 
         // Añadiendo destinatarios
         $phpmailer->setFrom('christianmoralopez@hotmail.com', 'Christian Mora Lopez');
@@ -25,6 +25,9 @@ function sendMail($subject, $body, $email, $name, $html = false) {
         $phpmailer->isHTML($html);
         $phpmailer->Subject = $subject;
         $phpmailer->Body = $body;
+
+         // Establecer la codificación de caracteres a UTF-8
+         $phpmailer->CharSet = 'UTF-8';
 
         // Mandar el correo
         $phpmailer->send();

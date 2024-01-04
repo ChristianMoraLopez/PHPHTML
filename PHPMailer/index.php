@@ -44,6 +44,9 @@ if ( isset($_POST["form"]) ) {
     <title>Formulario de contacto</title>
 </head>
 <body>
+    
+    <section class="contact">
+
 
     <?php if($status == "danger"): ?>
     
@@ -93,16 +96,17 @@ if ( isset($_POST["form"]) ) {
         <div class="contact-info">
             
             <div class="info">
-                <span><i class="fas fa-map-marker-alt"></i> 13 Saw Mill Circle, North Olmested.</span>
+                <span><i class="fas fa-map-marker-alt"></i> Cra 27A # 53 A - 05.</span>
             </div>
 
             <div class="info">
-                <span><i class="fas fa-phone"></i> +1 123 456 7890</span>
+                <span><i class="fas fa-phone"></i> +57 314 4715980</span>
             </div>
 
         </div>
 
     </form>
+    </section>
 
     <script src="https://kit.fontawesome.com/bbff992efd.js" crossorigin="anonymous"></script>
     <script src="anime.js"></script>
