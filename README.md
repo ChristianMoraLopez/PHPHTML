@@ -1,7 +1,7 @@
-## Formulario de Contacto con PHPMailer
+# Formulario de Contacto con PHPMailer
 Este es un formulario de contacto simple implementado en PHP que utiliza PHPMailer para enviar correos electrónicos. El formulario incluye validación básica en el lado del servidor y notificaciones de éxito o error después de enviar el mensaje.
 
-# Configuración de PHPMailer
+## Configuración de PHPMailer
 Asegúrate de configurar correctamente PHPMailer con la información de tu servidor SMTP y credenciales de correo electrónico en el archivo mail.php.
 ```
 php
@@ -48,7 +48,7 @@ function sendMail($subject, $body, $email, $name, $html = false) {
 ?>
 
 ```
-# Uso del Formulario
+## Uso del Formulario
 El formulario HTML está incluido en el archivo principal. Al enviar el formulario, se procesa en la misma página, y se muestra una alerta de éxito o error según el resultado del envío.
 
 El formulario incluye campos para el 
