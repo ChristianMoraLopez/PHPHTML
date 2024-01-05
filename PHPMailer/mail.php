@@ -18,7 +18,7 @@ function sendMail($subject, $body, $email, $name, $html = false) {
         $phpmailer->Password = 'insertacontraseña'; // Reemplaza esto con tu contraseña real
 
         // Añadiendo destinatarios
-        $phpmailer->setFrom('christianmoralopez@hotmail.com', 'Christian Mora Lopez');
+        $phpmailer->setFrom('tucorreo@dominio.com', 'nombre del remitente');
         $phpmailer->addAddress($email, $name); 
 
         // Definiendo el contenido de mi email
